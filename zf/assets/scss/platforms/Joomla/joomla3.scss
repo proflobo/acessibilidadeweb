@@ -1,0 +1,24 @@
+/**
+ * @package   Cenere (free) - accessibletemplate
+ * @version   4.0.0
+ * @author    Francesco Zaniol, accessibletemplate - http://www.accessibletemplate.com
+ * @copyright Copyright (C) 2011-Present Francesco Zaniol
+ * @license   http://ec.europa.eu/idabc/eupl.html EUPL v1.1 only
+ **/
+
+// --------- SASS libraries --------- //
+
+@import "../../_imports/global/global-vars";
+@import "../../_imports/global/sass-helpers";
+
+// --------- Joomla styles --------- //
+
+@import "_imports/bootstrap/v1/joomla-bootstrap";
+@import "_imports/bootstrap/v1/joomla-bootstrap-responsive";
+@import "_imports/joomla-platform/joomla-platform-12";
+@import "_imports/shared/v1/joomla-menus";
+
+// --------- Joomla theme skin --------- //
+
+@import "../../_imports/skin/platforms/Joomla/skin-joomla3";
+@import "../../_imports/skin/platforms/Joomla/shared/v1/skin-joomla-menus";

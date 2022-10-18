@@ -1,0 +1,1 @@
+Note: overrides.css is NOT included by default for performance reasons. To enable this override access the template administration page, open the tab "Advanced Options" and set "Enable 'overrides.css'?" to "true".

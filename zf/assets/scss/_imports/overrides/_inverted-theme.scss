@@ -1,0 +1,30 @@
+/**
+ * @package   Cenere (free) - accessibletemplate
+ * @version   4.0.0
+ * @author    Francesco Zaniol, accessibletemplate - http://www.accessibletemplate.com
+ * @copyright Copyright (C) 2011-Present Francesco Zaniol
+ * @license   http://ec.europa.eu/idabc/eupl.html EUPL v1.1 only
+ **/
+
+/*------------------------------------------------------------
+   CSS3 FILTER
+------------------------------------------------------------*/
+
+#zf__html.zf--supports-css3-filter:not(.zf--fixed-meta-viewport) #zf--body.zf--theme-inverted{
+
+    @media #{$global-var_mediaquery-combo-md-lg}{
+
+        background: #222;
+
+        #zf--main-layout-partial, #zf--main-layout-wrapper {
+            -webkit-filter: invert(100%) hue-rotate(180deg);
+            filter: invert(100%) hue-rotate(180deg);
+            img, iframe, object{
+                -webkit-filter: invert(100%) hue-rotate(-180deg);
+                filter: invert(100%) hue-rotate(-180deg);
+            }
+        }
+
+    }
+
+}

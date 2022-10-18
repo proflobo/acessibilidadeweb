@@ -1,0 +1,40 @@
+/**
+ * @package   Cenere (free) - accessibletemplate
+ * @version   4.0.0
+ * @author    Francesco Zaniol, accessibletemplate - http://www.accessibletemplate.com
+ * @copyright Copyright (C) 2011-Present Francesco Zaniol
+ * @license   http://ec.europa.eu/idabc/eupl.html EUPL v1.1 only
+ **/
+
+// --------- SASS libraries & helpers --------- //
+
+@import "_imports/global/sass-helpers";
+
+// --------- Global vars --------- //
+
+@import "_imports/global/global-vars";
+@import "_imports/skin/skin-vars";
+
+// --------- Global --------- //
+
+@import "_imports/global/reset";
+@import "_imports/global/typography";
+@import "_imports/global/zhong-icons-import";
+@import "_imports/global/helper-classes";
+@import "_imports/global/snippets";
+@import "_imports/global/misc";
+@import "_imports/skin/skin-global";
+
+// --------- Layout structure --------- //
+
+@import "_imports/layout/main";
+
+// --------- Main theme style --------- //
+
+@import "_imports/skin/skin-main";
+
+// --------- Overrides --------- //
+
+@import "_imports/overrides/z-index";
+@import "_imports/overrides/font-legibility";
+@import "_imports/overrides/inverted-theme";

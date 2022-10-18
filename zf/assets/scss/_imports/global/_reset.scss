@@ -1,0 +1,25 @@
+///
+// @package   Cenere (free) - accessibletemplate
+// @version   4.0.0
+// @author    Francesco Zaniol, accessibletemplate - http://www.accessibletemplate.com
+// @copyright Copyright (C) 2011-Present Francesco Zaniol
+// @license   http://ec.europa.eu/idabc/eupl.html EUPL v1.1 only
+///
+
+/*==========================================================================
+   RESET
+==========================================================================*/
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary,dialog
+{background:none;border:0;padding:0;outline:0;line-height:inherit;color:inherit;font-size:inherit;}
+*,*:before,*:after{margin:0;font-weight:inherit;font-size:inherit;font-style:inherit;font-family:inherit;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary,dialog{display:block;}
+audio,canvas,video{display:inline-block;}
+audio:not([controls]){display:none;height:0;}
+[hidden]{display:none;}
+table{border-collapse:collapse;border-spacing:0;}
+caption,th,td{text-align:inherit;font-weight:normal;}
+table,td,th{vertical-align:middle;}
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+blockquote,q{quotes:"" "";}
+svg:not(:root){overflow:hidden;}

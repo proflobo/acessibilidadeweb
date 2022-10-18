@@ -1,0 +1,248 @@
+///
+// @package   Cenere (free) - accessibletemplate
+// @version   4.0.0
+// @author    Francesco Zaniol, accessibletemplate - http://www.accessibletemplate.com
+// @copyright Copyright (C) 2011-Present Francesco Zaniol
+// @license   http://ec.europa.eu/idabc/eupl.html EUPL v1.1 only
+///
+
+/*------------------------------------------------------------
+   FONT IMPORT
+ - Font used: "Cambo-Regular"
+ - link: http://www.huertatipografica.com.ar/
+ - licence: See license file in "./fonts/"
+------------------------------------------------------------*/
+
+@font-face{
+	font-family: 'CamboRegular';
+	src: url('#{$skin-var_path-to-typography-fonts}/cambo/Cambo-Regular-webfont.eot');
+	src: url('#{$skin-var_path-to-typography-fonts}/cambo/Cambo-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+		url('#{$skin-var_path-to-typography-fonts}/cambo/Cambo-Regular-webfont.woff') format('woff'),
+		url('#{$skin-var_path-to-typography-fonts}/cambo/Cambo-Regular-webfont.ttf') format('truetype'),
+		url('#{$skin-var_path-to-typography-fonts}/cambo/Cambo-Regular-webfont.svg#CamboRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*==========================================================================
+   GLOBAL & TYPOGRAPHY - SKIN
+==========================================================================*/
+
+// --------- Body --------- //
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	color:#222;
+	background:#F2F2F2;
+}
+
+// --------- Headings --------- //
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'CamboRegular', Arial, Helvetica, sans-serif;
+	color:#222;
+}
+
+// --------- links --------- //
+
+a{color:#A62700;}
+a:visited{color:#732108;}
+a:focus,a:active,a:hover{color:#545454;}
+
+// --------- Tables --------- //
+
+table{background-color:#FFF;}
+td,tr{border:1px solid #C3BFBB;}
+th,td,caption{}
+tfoot{}
+caption{background:#E0E0E0;margin:0 1%;}
+th{font-weight:bold;}
+thead,thead tr{background:#333;color:#FFF;}
+th,thead td{border:1px solid #C3BFBB;}
+th a{color:#CCC;}
+th a:hover{color:#FFF;}
+
+// --------- Form style --------- //
+
+form{
+
+}
+fieldset{
+    border:3px solid #F9F8F8;
+    border-radius:3px;    
+}
+legend{
+	background-color:#F9F8F8;
+	padding: 0.4em 1em;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+form label{}
+input,textarea,select{
+	background-color:#FEFEFE;
+	border:1px solid #CECECE;
+}
+textarea{}
+option{background-color:#FEFEFE;color:inherit;}
+button,input[type=button],input[type=reset],input[type=submit],
+.btn,.btn:visited,.button,.button:visited{
+	text-align:center; cursor:pointer; text-indent:0; display:inline-block; text-decoration:none; // Shared among skins
+	border:1px solid #444;
+	border-color:#BBB #AAA #AAA #BBB;
+	background:#EEEDEA;
+	color:#222;
+	padding: em(6px) em(9px);
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+button:hover,input[type=button]:hover,input[type=reset]:hover,input[type=submit]:hover,.btn:hover,.button:hover,
+button:focus,input[type=button]:focus,input[type=reset]:focus,input[type=submit]:focus,.btn:focus,.button:focus
+{background-color:#F5F4F1;border-color:#CCC;color:#111;}
+button:active,input[type=button]:active,input[type=reset]:active,input[type=submit]:active,.btn:active,.button:active
+{border-color:#A62700;background-color:#A62700;color:#FFF;}
+input:hover,textarea:hover,select:hover{background-color:#FFFFCC;}
+input:focus,textarea:focus,select:focus{background-color:#FFFFCC;}
+
+// --------- Other --------- //
+
+hr{
+	display:block;
+	margin:2em 6% 1.8em 6%;
+	padding:0;
+	width:auto;
+	height:0;
+	clear:both;
+	border:0;
+	border-top:1px solid #999;
+	border-bottom:1px solid #FFF;
+}
+
+/*------------------------------------------------------------
+   COATS STYLES - SKIN
+------------------------------------------------------------*/
+
+// --------- MAINBODY - DEFAULT STYLE --------- //
+
+.zf--block-coat--marked-default{
+	width:auto;
+	padding:.5em 2% 1em 2%;
+	margin:.3em;
+	overflow:visible;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+// headings
+.zf--block-coat--marked-default h1,
+.zf--block-coat--marked-default h2,
+.zf--block-coat--marked-default h3{
+	font-size:em(26px);
+	color:#444;
+	margin:0 0 .54em 0;
+	padding:.54em .3em .24em .3em;
+}
+
+// --------- MAINBODY - PLAIN & FULL-WIDTH CLASSES --------- //
+
+.zf--block-coat--plain,
+.zf--block-coat--full-width{display:block;padding:0;margin:0;}
+// plain
+.zf--block-coat--plain{padding:.8em 4%;}
+
+// --------- MAINBODY - LIGHT & DARK CLASSES --------- //
+
+// general
+.zf--block-coat--marked-light,
+.zf--block-coat--marked-dark{
+	border-width:1px 0 0 0;
+	border-style:solid;
+	display:block;
+	width:auto;
+	margin:.6em 2%;
+	padding:.4em 4% .8em 4%;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+.zf--block-coat--marked-light h1,
+.zf--block-coat--marked-light h2,
+.zf--block-coat--marked-light h3,
+.zf--block-coat--marked-dark h1,
+.zf--block-coat--marked-dark h2,
+.zf--block-coat--marked-dark h3{
+	display:block;
+	margin:.3em 1% .6em 1%;
+	padding:.3em 0;
+	text-indent:0;
+	border-bottom-style:dotted;
+	border-bottom-width:0px;
+}
+.zf--block-coat--marked-light>h1:first-child,
+.zf--block-coat--marked-light>h2:first-child,
+.zf--block-coat--marked-light>h3:first-child,
+.zf--block-coat--marked-dark>h1:first-child,
+.zf--block-coat--marked-dark>h2:first-child,
+.zf--block-coat--marked-dark>h3:first-child{margin-top:0;}
+// light module
+.zf--block-coat--marked-light{
+	color:#333;
+	border-color:#FFF;
+	background:#F9F8F8;
+}
+.zf--block-coat--marked-light h1,
+.zf--block-coat--marked-light h2,
+.zf--block-coat--marked-light h3{color:#222;}
+.zf--block-coat--marked-light:hover{}
+// dark module
+.zf--block-coat--marked-dark{
+	color:#191919;
+	border-color: #F8F8F8;
+	background: #DDD;
+}
+.zf--block-coat--marked-dark h1,
+.zf--block-coat--marked-dark h2,
+.zf--block-coat--marked-dark h3{
+	border-bottom-color:#000;
+}
+.zf--block-coat--marked-dark:hover{}
+
+// --------- FOOTER - DEFAULT STYLE --------- //
+
+#zf--footer .zf--block-coat--marked-default{
+	width:auto;
+	padding:1em 4%;
+}
+// headings
+#zf--footer .zf--block-coat--marked-default h1,
+#zf--footer .zf--block-coat--marked-default h2,
+#zf--footer .zf--block-coat--marked-default h3{
+	text-transform:none;
+	padding:.6em 0 .4em .4em;
+}
+
+// --------- FOOTER - LIGHT & DARK CLASSES --------- //
+
+// light module
+#zf--footer .zf--block-coat--marked-light{
+	border-color: #777;
+	background-color: #595959;
+	color:#FFF;
+}
+#zf--footer .zf--block-coat--marked-light h1,
+#zf--footer .zf--block-coat--marked-light h2,
+#zf--footer .zf--block-coat--marked-light h3{
+	color: #FFF;
+}
+// dark module
+#zf--footer .zf--block-coat--marked-dark{
+	border-color: #555;
+	background: #444;
+	color:#DCDCDC;
+}
+#zf--footer .zf--block-coat--marked-dark h1,
+#zf--footer .zf--block-coat--marked-dark h2,
+#zf--footer .zf--block-coat--marked-dark h3{
+	color: #DCDCDC;
+}

@@ -1,0 +1,46 @@
+///
+// @package   Cenere (free) - accessibletemplate
+// @version   4.0.0
+// @author    Francesco Zaniol, accessibletemplate - http://www.accessibletemplate.com
+// @copyright Copyright (C) 2011-Present Francesco Zaniol
+// @license   http://ec.europa.eu/idabc/eupl.html EUPL v1.1 only
+///
+
+// --------- Config vars --------- //
+
+// Paths
+$global-var_path-to-imgs: "../../img" !default;
+$global-var_path-to-zhong-icons-font: "../../fonts/icons" !default;
+
+// Media query breakpoints
+$global-var_sm-md-breakpoint: 600px;
+$global-var_md-lg-breakpoint: 1024px;
+
+// --------- SM --------- //
+
+$global-var_mediaquery-sm:
+"screen and (max-width:#{$global-var_sm-md-breakpoint - 1px})";
+
+// --------- MD --------- //
+
+$global-var_mediaquery-md:
+"screen and (min-width:#{$global-var_sm-md-breakpoint}) and (max-width:#{$global-var_md-lg-breakpoint - 1px})";
+
+// --------- LG --------- //
+
+$global-var_mediaquery-lg:
+"screen and (min-width:#{$global-var_md-lg-breakpoint})";
+
+// --------- SM + MD --------- //
+
+$global-var_mediaquery-combo-sm-md:
+"screen and (max-width:#{$global-var_md-lg-breakpoint - 1px})";
+
+// --------- MD + LG --------- //
+
+$global-var_mediaquery-combo-md-lg:
+"screen and (min-width:#{$global-var_sm-md-breakpoint})";
+
+// --------- Selectors --------- //
+
+$global-var_text-like-input-selectors: "input[type=text], input[type=email], input[type=password], input[type=search], input[type=url], input[type=datetime], input[type=date], input[type=month], input[type=week], input[type=time], input[type=datetime-local], input[type=number]";

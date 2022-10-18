@@ -1,0 +1,28 @@
+/**
+ * Copyright (c) 2011-Present Francesco Zaniol,
+ * Accessible Template - http://www.accessibletemplate.com
+ **/
+
+Dear User,
+
+Thank you for downloading and using one of our templates.
+
+All the accessible templates are based on the Zhong Framework.
+
+This template is released under the GPL v2.0 license and partially under the EUPL v1.1 license (GPL compatible). This means that you are free to redistribute it or publish it under the licences conditions.
+
+-------------------------------------------------------------------
+
+If you:
+ - Need support / or 
+ - Need a customized template based on the Zhong Framework / or
+ - Want to give a feedback / or
+ - Want to report a bug / or
+ - Want to provide a translation
+you're welcome to visit http://www.accessibletemplate.com and contact me
+
+-------------------------------------------------------------------
+
+I hope you appreciate my work and my efforts to make this template a quality product.
+
+Francesco Zaniol

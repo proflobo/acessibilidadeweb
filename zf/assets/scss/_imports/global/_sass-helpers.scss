@@ -1,0 +1,45 @@
+///
+// @package   Cenere (free) - accessibletemplate
+// @version   4.0.0
+// @author    Francesco Zaniol, accessibletemplate - http://www.accessibletemplate.com
+// @copyright Copyright (C) 2011-Present Francesco Zaniol
+// @license   http://ec.europa.eu/idabc/eupl.html EUPL v1.1 only
+///
+
+//------------------------------------------------------------
+// EM CONVERTER
+// Usage example: font-size:em(12px, 14px); or font-size:em(12px);
+//------------------------------------------------------------
+@function em($target, $context: 16px){
+    @if $target == 0 { @return 0 }
+    @return $target / $context + 0em;
+}
+
+//------------------------------------------------------------
+// ALPHA BG COLOR
+// Ensure compatibility with IE8
+//------------------------------------------------------------
+
+@mixin alpha-background-color($color, $alpha) {
+  $rgba: rgba($color, $alpha);
+  $ie-hex-str: ie-hex-str($rgba);
+  background-color: $rgba;
+  -ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#{$ie-hex-str}',endColorstr='#{$ie-hex-str}')";
+}
+
+//------------------------------------------------------------
+// VISUALLY HIDDEN
+//------------------------------------------------------------
+
+@mixin visually-hidden(){
+    border:0 !important;
+    clip:rect(0 0 0 0) !important;
+    height:1px !important;
+    margin:-1px !important;
+    overflow:hidden !important;
+    padding:0 !important;
+    position:absolute !important;
+    width:1px !important;
+    outline:0 !important;
+    white-space:nowrap !important;
+}

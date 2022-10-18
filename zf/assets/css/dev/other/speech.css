@@ -1,0 +1,19 @@
+/**
+ * @package   Cenere (free) - accessibletemplate
+ * @version   4.0.0
+ * @author    Francesco Zaniol, accessibletemplate - http://www.accessibletemplate.com
+ * @copyright Copyright (C) 2011-Present Francesco Zaniol
+ * @license   http://ec.europa.eu/idabc/eupl.html EUPL v1.1 only
+ **/
+* {
+  voice-family: male;
+}
+
+.zf--section-heading,
+#zf--quick-access-menu * {
+  voice-family: female;
+}
+
+[aria-hidden="true"] {
+  speak: none !important;
+}

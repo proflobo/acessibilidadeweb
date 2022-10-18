@@ -1,0 +1,317 @@
+///
+// @package   Cenere (free) - accessibletemplate
+// @version   4.0.0
+// @author    Francesco Zaniol, accessibletemplate - http://www.accessibletemplate.com
+// @copyright Copyright (C) 2011-Present Francesco Zaniol
+// @license   http://ec.europa.eu/idabc/eupl.html EUPL v1.1 only
+///
+
+/*==========================================================================
+   LAYOUT PARTIALS - SKIN
+==========================================================================*/
+
+/*------------------------------------------------------------
+   TOP BAR
+   Note: this code is kept only for legacy compatibility; it will be removed in future versions
+------------------------------------------------------------*/
+
+#zf--top-layout-partial--skin{
+    background:#FEFEFE;
+}
+
+// --------- Bar height --------- //
+
+#zf--top-layout-partial--skin{ line-height:em(38px); }
+
+// --------- Top-bar breadcrumbs --------- //
+
+#zf--top-layout-partial{
+    #zf--breadcrumbs{
+        display:block !important; // needed for JS auto-hide if link-less
+    }
+    #zf--breadcrumbs--skin{
+        margin:0;
+    	padding:0 .4em;
+    	background:none;
+    	border:0;
+    	text-shadow:1px 1px 1px #FFF;
+    }
+    #zf--breadcrumbs a{
+    }
+}
+
+/*------------------------------------------------------------
+   LAYOUT CONTAINER
+------------------------------------------------------------*/
+
+#zf--main-layout-partial--skin{
+	margin:.4em auto 0 auto;
+}
+
+/*------------------------------------------------------------
+   HEADER
+------------------------------------------------------------*/
+
+#zf--header--skin{
+	margin:0 0 .4em 0;
+}
+#zf--header-middle--skin{
+    margin-top:.6em;    
+    margin-bottom:1em;
+}
+
+// --------- HEADER-TOP --------- //
+
+#zf--header-aside{
+    float: right;
+    html[dir="rtl"] &{ float: left; }
+}
+
+/*------------------------------------------------------------
+   SUPPORT MENU
+------------------------------------------------------------*/
+
+#zf--support-menu--skin{
+	margin:.7em .44em .22em .44em;
+	background-color:#F7F7F7;
+	border: 1px solid #FAFAFA;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+/*------------------------------------------------------------
+   MAIN MENU
+------------------------------------------------------------*/
+
+#zf--main-menu--skin{
+}
+
+/*------------------------------------------------------------
+   MAIN BODY
+------------------------------------------------------------*/
+
+#zf--main-body--skin{}
+
+/*------------------------------------------------------------
+   LEFT COLUMN
+------------------------------------------------------------*/
+
+#zf--left-column--skin{ margin-bottom:1em; }
+
+/*------------------------------------------------------------
+   RIGHT COLUMN
+------------------------------------------------------------*/
+
+#zf--right-column--skin{}
+
+/*------------------------------------------------------------
+   LOGIN
+------------------------------------------------------------*/
+
+#zf--login form{padding-bottom:2em;}
+#zf--login fieldset{}
+
+/*------------------------------------------------------------
+   CONTENT AREA
+------------------------------------------------------------*/
+
+#zf--main-content--skin{
+	background-color:#FEFEFE;
+	padding-bottom:1em;
+	padding-top:.6em;
+	margin-bottom:1em;
+	margin-top:.3em;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+// --------- Main content elements --------- //
+
+#zf--main-article p{}
+#zf--main-article ul{}
+#zf--main-article ol{}
+#zf--main-article ul li,#zf--main-article ol li{}
+// headers in content area
+#zf--main-article h1 a,#zf--main-article h2 a,#zf--main-article h3 a,
+#zf--main-article h4 a,#zf--main-article h5 a,#zf--main-article h6 a{text-decoration:none;}
+
+/*------------------------------------------------------------
+   FOOTER 
+------------------------------------------------------------*/
+
+#zf--footer--skin{
+	background-color: #333;
+	color: #D2CECE;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	a, a:visited{ color: #FFF; }
+    a:hover, a:active, a:focus{ color:#D2CECE; }
+}
+
+#zf--footer a{ color:#FFF; }
+#zf--footer a:visited{color:#D2CECE;}
+#zf--footer a:hover,
+#zf--footer a:active,
+#zf--footer a:focus{color:#D2CECE;}
+
+#zf--footer-content h1,
+#zf--footer-content h2,
+#zf--footer-content h3,
+#zf--footer-content h4,
+#zf--footer-content h5,
+#zf--footer-content h6{
+	color: #EEE;
+}
+
+// --------- footer credits --------- //
+
+#zf--footer-credits--skin{
+	margin-top:2em;
+	margin-bottom:2em;
+}
+
+/*==========================================================================
+   COMPONENTS & MODULES - SKIN
+==========================================================================*/
+
+/*------------------------------------------------------------
+   BREADCRUMBS
+------------------------------------------------------------*/
+
+#zf--breadcrumbs--skin{
+    background-color: #F9F8F8;
+    border: 1px solid #F4F4F4;
+    border-radius: 3px;
+}
+
+/*------------------------------------------------------------
+   TOOLBOX BUTTONS
+------------------------------------------------------------*/
+
+.zf--toolbox-button{}
+
+/*------------------------------------------------------------
+   HEADER ICONS
+------------------------------------------------------------*/
+
+.zf--toolbox-button, #zf--main-menu-expand-button{
+    color:#363636;
+    &:hover{color:#4A4A4A;}
+    &:focus,
+    &:active,
+    &.zf--active{color:#CC2D17;}
+}
+
+// --------- Text style --------- //
+// Empty
+
+// --------- Icon style --------- //
+// Empty
+
+/*------------------------------------------------------------
+   TOOLBOX PANELS
+------------------------------------------------------------*/
+
+.zf--toolbox-panel--skin{
+	border-color:#FEFEFE;
+	background-color:#FEFEFE;
+}
+
+/*------------------------------------------------------------
+   LANGUAGE SWITCHER
+------------------------------------------------------------*/
+
+#zf--language-switcher--skin{}
+
+/*------------------------------------------------------------
+   SEARCH // only for legacy, deprecating (?)
+------------------------------------------------------------*/
+
+#zf--header-top #zf--search{
+	margin:.4em .44em;
+}
+#zf--header-top #zf--search form button,
+#zf--header-top #zf--search form input[type=submit]{
+	font-size:em(15px);
+	margin:0 2px 0 0;
+	padding:0 .6em;
+	height:2.4em;
+	line-height:2em;
+	display: none;
+}
+#zf--header-top #zf--search form button:hover,
+#zf--header-top #zf--search form input[type=submit]:hover{}
+#zf--header-top #zf--search form input[type=text],
+#zf--header-top #zf--search form input[type=search]{
+	padding:2px .3em;
+	height:2em;
+	line-height:2em;
+	font-size:em(15px);
+	min-width:14em;
+	color:#555;
+	float:right;
+}
+#zf--header-top #zf--search form input[type=text]:focus,
+#zf--header-top #zf--search form input[type=search]:focus{color:#333;border-color:#D93322;}
+
+/*------------------------------------------------------------
+   WEBSITE PRESENTATION
+------------------------------------------------------------*/
+
+#zf--website-banner--skin{margin:1.2em 2% .8em 2%;}
+
+#zf--site-title{
+	font-size:3em;
+	margin:0 0 .1em 0;
+	line-height:1.2em;	
+	font-style:normal;
+	color:#444;
+	text-shadow:1px 1px 1px #FFF;
+}
+#zf--site-subtitle{
+	font-size:1em;
+	margin:0 0 .4em 1em;
+	color:#333;
+	line-height:1em;	
+}
+
+/*==========================================================================
+   OTHER ELEMENTS - SKIN
+==========================================================================*/
+
+/* --------- "Go to top" button --------- */
+
+#zf--top-anchor-container{position:relative;top:2em;}
+#zf--top-anchor{
+	padding: 0;
+	margin: 0;
+	width: 3em;
+	height: 2em;
+	line-height: 1.9em;
+	text-align: center;
+	position: relative;
+	right: 4px;
+	border:1px solid #666;
+	border-width:0 1px 1px 1px;
+	background:#444;
+	text-decoration: none;
+	fill:#BBB;color:#BBB;
+	border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	box-shadow: inset 0px 1px 4px rgba(0,0,0,.3);
+}
+#zf--top-anchor:hover,
+#zf--top-anchor:active,
+#zf--top-anchor:focus{
+	background:#494949;
+	fill:#EEE;color:#EEE;
+	border-color: #777;
+	box-shadow: none;
+}

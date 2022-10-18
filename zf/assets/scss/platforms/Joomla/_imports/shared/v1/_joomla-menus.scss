@@ -1,0 +1,259 @@
+///
+// @package   Cenere (free) - accessibletemplate
+// @version   4.0.0
+// @author    Francesco Zaniol, accessibletemplate - http://www.accessibletemplate.com
+// @copyright Copyright (C) 2011-Present Francesco Zaniol
+// @license   http://ec.europa.eu/idabc/eupl.html EUPL v1.1 only
+///
+
+/*==========================================================================
+   RESETS + SHARED
+==========================================================================*/
+
+#zf--main-menu ul,
+#zf--main-body .zf--menu-container ul{
+    list-style-type:none;
+    margin:0;padding:0;
+    width:100%;
+    display:block;
+    position:relative;
+    float: none;
+}
+#zf--main-menu li,
+#zf--main-body .zf--menu-container li{
+    margin:0;padding:0;
+    position:relative;
+    width:100%;
+    float: none;
+}
+#zf--main-menu li a,
+#zf--main-body .zf--menu-container li a{
+    display:block;
+    width:auto;
+    position:relative;
+    margin:0;padding:0;
+}
+
+// --------- Sub-levels active states --------- //
+
+#zf--main-menu ul ul,
+#zf--main-body .zf--menu-container ul ul{
+    visibility:hidden;
+    position:absolute;
+    opacity:0;
+    visibility: hidden;
+    transition: visibility .1s ease, opacity .1s ease, transform .1s ease; // quicker fade-out transition
+}
+html.no-js #zf--main-menu ul ul:hover,
+html.no-js #zf--main-menu ul li:hover>ul,
+#zf--main-menu ul ul.zf--menu-is-expanded,
+html.no-js #zf--main-body .zf--menu-container ul ul:hover,
+html.no-js #zf--main-body .zf--menu-container ul li:hover>ul,
+#zf--main-body .zf--menu-container ul ul.zf--menu-is-expanded{
+    opacity:1;
+    visibility: visible;
+    transition: visibility .25s ease, opacity .25s ease, transform .3s ease;
+}
+
+// --------- Arrows style --------- //
+
+#zf--main-menu ul li.parent>a,
+#zf--main-body .zf--menu-container ul li.parent>a{
+    padding-right:1.6em; // Spacing for the arrow
+}
+
+// Positioning
+#zf--main-menu ul li.parent>a:after,
+#zf--main-body .zf--menu-container ul li.parent>a:after{
+    content:'';display:block;
+    width:0;height:0;
+    position:absolute;top:50%;right:.6em;left:auto;
+    border-style:solid inset hidden outset;
+    border-width:.36em;
+    border-width:.36rem;
+    margin-top:-.18em;
+    margin-top:-.12rem;
+    position: absolute;
+    transition: border-color .3s ease;
+    @media #{$global-var_mediaquery-sm}{
+        // Bigger arrows for mobile
+        border-width:.4em;
+        border-width:.4rem;
+        margin-top:-.16em;
+        margin-top:-.16rem;
+    }
+}
+
+// Arrow color
+#zf--main-menu ul li.parent>a,
+#zf--main-body .zf--menu-container ul li.parent>a{
+    &:not(.zf--expanded):after{ // using :not in order to give crossbrowser support for "initial"
+        border-bottom-color:transparent;
+        border-left-color:transparent;
+        border-right-color:transparent;
+        border-top-color:initial; // Note: "initial" is not supported by IE, but having it separated from the other 3 corners will make it fallback to "initial"
+    }
+    html.ie8 &:after{ // IE8 doesn't support :not()
+        border-color:transparent;
+        border-top-color:#999;
+    }
+}
+#zf--main-menu ul li.parent>a.zf--expanded,
+#zf--main-body .zf--menu-container ul li.parent>a.zf--expanded{
+    &:after{
+        border-style:hidden inset solid outset;
+        border-bottom-color:initial; // Same here: IE doesn't understand initial, but keep it separated from the other 3 corners
+        border-left-color:transparent;
+        border-right-color:transparent;
+        border-top-color:transparent;
+    }
+    html.ie8 &:after{ // IE8 doesn't support :not()
+        border-color:transparent;
+        border-bottom-color:#999;
+    }
+}
+
+// --------- Sub-menus' effects --------- //
+
+// Fade
+// This effect is the default one having opacity always transitioned
+
+// Motion
+html.js body.zf--submenus-effect-motion{
+    #zf--main-menu ul ul,
+    #zf--main-body .zf--menu-container ul ul{
+        transform: translate(0px, 6px);
+    }
+    #zf--main-menu ul ul.zf--menu-is-expanded,
+    #zf--main-body .zf--menu-container ul ul.zf--menu-is-expanded{
+        transform: translate(0px, 0px);
+    }
+}
+
+// Flip
+html.js body.zf--submenus-effect-flip{
+    #zf--main-menu ul ul,
+    #zf--main-body .zf--menu-container ul ul{
+        transform-origin:50% 50%;
+        transform:rotateX(-40deg);
+    }
+    #zf--main-menu ul ul.zf--menu-is-expanded,
+    #zf--main-body .zf--menu-container ul ul.zf--menu-is-expanded{
+        transform:rotateX(0deg);
+    }
+}
+
+// Scale
+html.js body.zf--submenus-effect-scale{
+    #zf--main-menu ul ul,
+    #zf--main-body .zf--menu-container ul ul{
+        transform:scale(.96);
+    }
+    #zf--main-menu ul ul.zf--menu-is-expanded,
+    #zf--main-body .zf--menu-container ul ul.zf--menu-is-expanded{
+        transform:scale(1);
+    }
+}
+
+
+/*==========================================================================
+   FLOATING STYLE
+==========================================================================*/
+
+// --------- 1st level --------- //
+
+#zf--main-menu li{
+    display:inline-block;
+    width:auto;
+}
+
+// --------- 2nd level + inherited --------- //
+
+#zf--main-menu ul ul{
+    width:auto;
+    top:100%;left:0;
+    html[dir="rtl"] &{left:auto;right:0;} // rtl languages open the menu to the left
+}
+
+#zf--main-menu ul ul li{
+    display:block;
+    width:100%;
+}
+
+// --------- 3rd/4th/5th... levels --------- //
+
+#zf--main-menu ul ul ul{
+    top:0;
+    left:100%;
+    right:auto;
+    html[dir="rtl"] &{left:auto;right:100%;}
+}
+
+// --------- Main menu alignments --------- //
+
+#zf--header.zf--main-menu-alignment-center #zf--main-menu{
+    ul{text-align:center;}
+    ul li{text-align:left;} // reset
+    html[dir="rtl"] & ul li{text-align:right;} // reset
+}
+
+/*==========================================================================
+   EXPANDED STYLE (& mobile)
+==========================================================================*/
+
+// Note: some of the code must be duplicated in order to transform main-menu into expandable style in mobile layout
+
+@mixin expandedStyle_ulli(){
+    display:block;width:100%; // needed as override
+}
+#zf--main-body .zf--menu-container ul li{
+    @include expandedStyle_ulli();
+}
+#zf--main-menu ul li{
+    @media #{$global-var_mediaquery-sm}{
+        @include expandedStyle_ulli();
+    }
+}
+
+// --------- Sub-levels (2nd, 3rd ...) --------- //
+
+@mixin expandedStyle_ulul(){
+    padding:0 0 0 4%;
+    transition: none; // avoids weird effect on fade out; main transitioning is defined in the expanded state (see below)
+    html[dir="rtl"] &{ padding:0 4% 0 0; }
+}
+#zf--main-body .zf--menu-container ul ul{
+    @include expandedStyle_ulul();
+}
+#zf--main-menu ul ul{
+    @media #{$global-var_mediaquery-sm}{
+        @include expandedStyle_ulul();
+    }
+}
+
+// --------- Sub-levels active states --------- //
+
+@mixin expandedStyle_ulIsExpanded(){
+    position:relative;
+    // Note: transition is equal to the original one (see top of this file)
+    transition: visibility .25s ease .1s, opacity .25s ease .1s, transform .3s ease .1s;
+}
+html.no-js #zf--main-body .zf--menu-container ul ul:hover,
+html.no-js #zf--main-body .zf--menu-container ul li:hover>ul,
+#zf--main-body .zf--menu-container ul ul.zf--menu-is-expanded{
+    @include expandedStyle_ulIsExpanded();
+}
+html.no-js #zf--main-menu ul ul:hover,
+html.no-js #zf--main-menu ul li:hover>ul,
+#zf--main-menu ul ul.zf--menu-is-expanded{
+    @media #{$global-var_mediaquery-sm}{
+        @include expandedStyle_ulIsExpanded();
+    }
+}
+
+// --------- Resets for floating main-menu --------- //
+
+@media #{$global-var_mediaquery-sm}{
+    #zf__html #zf--body #zf--main-menu ul ul{ left:0;right:auto; }
+    #zf__html #zf--body #zf--main-menu ul a{ width:auto; }
+}

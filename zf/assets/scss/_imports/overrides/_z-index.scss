@@ -1,0 +1,38 @@
+///
+// @package   Cenere (free) - accessibletemplate
+// @version   4.0.0
+// @author    Francesco Zaniol, accessibletemplate - http://www.accessibletemplate.com
+// @copyright Copyright (C) 2011-Present Francesco Zaniol
+// @license   http://ec.europa.eu/idabc/eupl.html EUPL v1.1 only
+///
+
+/*==========================================================================
+   Z-INDEX
+==========================================================================*/
+
+// --------- Global stacking context --------- //
+
+.zf--tooltip-title,
+#zf__obsolete-browser-alert,
+#zf--quick-access-menu{z-index:999999;}
+
+#zf--alerts-panel{z-index:999800;}
+
+// --------- Main layout stacking context --------- //
+
+// Force layout's independent stacking context.
+// An independent context is important so that fixed-positioned plugins's or CMS's elements/buttons are
+// always print on top of the layout, no matter how high the z-index is for inner-layout elements
+#zf--main-layout-partial,
+#zf--main-layout-wrapper{ position:relative; z-index:1; }
+
+// Inner elements (contained by the main layout stack)
+
+.zf--toolbox-panel{z-index:99999;}
+
+#zf--main-menu ul ul{z-index:99999;}
+@media #{$global-var_mediaquery-sm}{
+    #zf--main-menu--skin{ // (floating panel)
+        z-index:99999;
+    }
+}

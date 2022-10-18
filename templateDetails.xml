@@ -1,0 +1,2576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.6//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.0" type="template" client="site" method="upgrade">
+    <name>cenere-free</name>
+    <creationDate>May 2017</creationDate>
+    <author>Francesco Zaniol</author>
+    <authorEmail>info@accessibletemplate.com</authorEmail>
+    <authorUrl>http://www.accessibletemplate.com</authorUrl>
+    <copyright>Copyright (C) 2011-Present Francesco Zaniol</copyright>
+    <license>GNU General Public License version 2 only , European Union Public License v1.1 only, other</license>
+    <version>4.0.0</version>
+    <description>
+    <![CDATA[
+        <h3 style="font-size:3em;float:none;display:block;text-align:center">Cenere (free)</h3>
+        <p style="text-align:center">
+        	<img style="float:none;" src="../templates/cenere-free/zf/assets/img/theme-logo.png" alt="">
+    		<span style="display:block;margin-top:.5em;">Template version: <span style="display:inline-block;padding:.4em .6em;background:#356BC3;border-radius:3px;vertical-align:middle;color:#FFF;">4.0.0</span></span>
+        </p>
+        <h4 style="font-size:2em;float:none;display:block;margin:1em 0 .4em 0;">Documentation</h4>
+        Learn here the <a href="http://www.accessibletemplate.com/demo/gallery/v4/documentation/template-snippets/?zfv=400" target="_blank">template snippets</a><br />
+        Learn here the <a href="http://www.accessibletemplate.com/demo/gallery/v4/documentation/modules-positions/?zfv=400" target="_blank">module positions</a><br />
+        More resources at <a href="http://www.accessibletemplate.com" target="_blank">www.accessibletemplate.com</a></p>
+        <h4 style="font-size:2em;float:none;display:block;margin:1em 0 .4em 0;">Contacts, bugs, translations and feedbacks</h4>
+        <p>Your feedback and advices are very valuable to us. Please do not hesitate to contact us at <em>info@accessibletemplate.com</em> if you: found a bug, have any suggestions on how to improve our templates and their accessibility, found a broken translation.</p>
+    <style type="text/css">
+        /**
+         * zhongframework admin custom style
+        **/
+        /* ~~~ Joomla 25 ~~~ */
+        fieldset.panelform label,fieldset.panelform div.paramrow label,fieldset.panelform span.faux-label{max-width:100%;}
+        fieldset.panelform .spacer label{width:100%;margin:5px 0;}
+        fieldset.panelform textarea{clear:both;width:96%;min-height:20em;}
+        .mod-desc p{font-weight:normal;}
+        p{cursor:initial;}
+        /* ~~~ Joomla 3 ~~~ */
+        #jform_params_zhongframework_Jparam_custom_user_inlineCSS,
+        #jform_params_zhongframework_Jparam_custom_code_head_bottom,
+        #jform_params_zhongframework_Jparam_custom_code_body_bottom{
+            width:32em;
+            max-width:100%;
+            min-height:14em;
+            }
+        /* ~~~ General elements' custom style ~~~ */
+        hr.zhongframework-admin-panel_custom-element-style{
+            margin:.5em 0;padding:0;width:100%;
+            border:1px solid #AAA;border-width:1px 0 0 0;}
+        .zhongframework-admin-panel_main-block-heading,
+        .zhongframework-admin-panel_secondary-block-heading{display:block;margin:0;padding:0;}
+        .zhongframework-admin-panel_main-block-heading{
+            color:#F3F3F3;
+            background:#5C5C5C;
+            padding:1em;
+            margin:2em 0 1em 0;
+            max-width:100%;
+            text-transform:uppercase;
+            }
+        .zhongframework-admin-panel_secondary-block-heading{
+            display: block;
+            background: #F0F0F0;
+            padding: 0.4em 1em;
+            max-width:100%;
+            color: #333;
+            }
+        [class*="zhongframework-admin-panel_highlighted-"]{
+            display: block;
+            padding: .8em;
+            margin: 0;
+            border-width: 2px 0;
+            border-style: solid;
+            font-size:1.2em;
+            }
+        [class*="zhongframework-admin-panel_highlighted-"] a{
+            color:inherit !important;
+            text-decoration:underline !important;
+            }
+        [class*="zhongframework-admin-panel_highlighted-"] a:hover,
+        [class*="zhongframework-admin-panel_highlighted-"] a:active,
+        [class*="zhongframework-admin-panel_highlighted-"] a:focus{
+            text-decoration:none !important;
+            }
+        .zhongframework-admin-panel_highlighted-red{
+            border-color: #F62;
+            background: #FFE9C2;
+            color: #881E10;
+            }
+        .zhongframework-admin-panel_highlighted-yellow{
+            border-color: #FFD324;
+            background: #FFF6BF;
+            color: #514721;
+            }
+        .zhongframework-admin-panel_highlighted-green{
+            border-color: #7ED060;
+            background: #E8FFCA;
+            color: #264409;
+            }
+        .zhongframework-admin-panel_check-for-updates,
+        .zhongframework-admin-panel_check-for-updates:visited{
+            color:#285193;
+            font-size:1.2em;
+            vertical-align:middle;
+            text-decoration:underline;
+            font-weight:normal;
+        }
+        .zhongframework-admin-panel_check-for-updates:hover,
+        .zhongframework-admin-panel_check-for-updates:active,
+        .zhongframework-admin-panel_check-for-updates:focus{
+            text-decoration:none;
+            color:#356BC3;
+        }
+        /*Joomla 25*/
+        /*nothing*/
+        /*Joomla 3*/
+        #templatestyleOptions .control-group hr.zhongframework-admin-panel_custom-element-style{min-width:25em;border-style:dashed;}
+        @media only screen and (max-device-width : 767px){
+            #templatestyleOptions .control-group hr.zhongframework-admin-panel_custom-element-style{min-width:0;}
+            }
+    </style>
+    ]]>
+    </description>
+
+    <scriptfile>updater/updater.php</scriptfile>
+
+    <updateservers>
+        <server type="extension" priority="1" name="ZhongFramework">https://www.accessibletemplate.com/resources/updates/zhong/v4/joomla/v1/live-updates-handler.php?templateId=cenere-free&amp;updateHash=deb448826e6816087a4ed8f8d6225431&amp;dummy=.xml</server>
+    </updateservers>
+
+    <files>
+        <folder>zf</folder>
+        <folder>html</folder>
+        <folder>updater</folder>
+        <folder>admin</folder>
+        <filename>index.html</filename>
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>component.php</filename>
+    </files>
+
+    <positions>
+        <position>breadcrumbs</position>
+        <position>support-menu</position>
+        <position>language-switcher</position>
+        <position>header-aside</position>
+        <position>site-banner</position>
+        <position>main-menu</position>
+        <position>side-menu</position>
+        <position>login</position>
+        <position>search</position>
+        <position>aside-left</position>
+        <position>aside-right</position>
+        <position>debug</position>
+        <position>alerts-panel</position>
+        <position>footer-menu</position>
+        <position>footer-credits</position>
+        <position>aside-top-A</position>
+        <position>aside-top-B1</position>
+        <position>aside-top-B2</position>
+        <position>aside-top-C1</position>
+        <position>aside-top-C2</position>
+        <position>aside-top-C3</position>
+        <position>aside-top-D1</position>
+        <position>aside-top-D2</position>
+        <position>aside-top-D3</position>
+        <position>aside-top-D4</position>
+        <position>main-top-A</position>
+        <position>main-top-B1</position>
+        <position>main-top-B2</position>
+        <position>main-top-C1</position>
+        <position>main-top-C2</position>
+        <position>main-top-C3</position>
+        <position>main-top-D1</position>
+        <position>main-top-D2</position>
+        <position>main-top-D3</position>
+        <position>main-top-D4</position>
+        <position>aside-bottom-A</position>
+        <position>aside-bottom-B1</position>
+        <position>aside-bottom-B2</position>
+        <position>aside-bottom-C1</position>
+        <position>aside-bottom-C2</position>
+        <position>aside-bottom-C3</position>
+        <position>aside-bottom-D1</position>
+        <position>aside-bottom-D2</position>
+        <position>aside-bottom-D3</position>
+        <position>aside-bottom-D4</position>
+        <position>footer-top-A</position>
+        <position>footer-top-B1</position>
+        <position>footer-top-B2</position>
+        <position>footer-top-C1</position>
+        <position>footer-top-C2</position>
+        <position>footer-top-C3</position>
+        <position>footer-top-D1</position>
+        <position>footer-top-D2</position>
+        <position>footer-top-D3</position>
+        <position>footer-top-D4</position>
+    </positions>
+
+    <config>
+        <fields name="params" addfieldpath="/templates/cenere-free/admin/custom-fields">
+<!--===================================
+   MAIN OPTIONS
+====================================-->
+            <fieldset name="templateOptions" label="Main Options">
+
+                <field name="zhongframework_Jparam_title" type="text" default="Website Title"
+                    label="Website title:"
+                    description=""
+                    />
+
+                <field name="zhongframework_Jparam_showTitle" type="list" default="true"
+                    label="Show title?"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+                <field name="zhongframework_Jparam_subtitle" type="text" default="Website Subtitle"
+                    label="Website subtitle:"
+                    description=""
+                    />
+
+                <field name="zhongframework_Jparam_showSubtitle" type="list" default="true"
+                    label="Show subtitle?"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field name="zhongframework_Jparam_showLogo" type="list" default="true"
+                    label="Show logo?"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+                <field name="zhongframework_Jparam_logoPath" type="media"
+                    label="Your logo:"
+                    hide_default="1"
+                    description="Choose the file for your logo. If no file is selected the default template logo is displayed" />
+
+                <field name="zhongframework_Jparam_enable_logoLink" type="list" default="true"
+                    label="Logo as a link?"
+                    description="If true, the logo will be a link to the site homepage"
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+                <field name="zhongframework_Jparam_logoWidth" type="text" default="auto"
+                    label="Logo max-width (in px)"
+                    description="Leave this field to &quot;auto&quot; if you want to keep the original size of the image. Note: if a max-width is set, the height will be calculated by the browser."
+                    filter="string" />
+
+                <field name="zhongframework_Jparam_showLogo_mobile" type="list" default="false"
+                    label="Enable custom logo for mobile layout?"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+                <field name="zhongframework_Jparam_logoPath_mobile" type="media"
+                    label="Select custom logo for mobile layout:"
+                    hide_default="1"
+                    description="" />
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field name="zhongframework_Jparam_presentationAlignment" type="list" default="side"
+                    label="Logo/Title/Subtitle alignment:"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="side">Side</option>
+                    <option value="center">Center</option>
+                </field>
+
+                <field name="zhongframework_Jparam_fullWidthLogo" type="list" default="false"
+                    label="Full width logo? (only in centered alignment)"
+                    description="If enabled, the logo will always stretch to the layout width (the max-width option will be ignored). This option is enabled only if &quot;Logo/Title/Subtitle alignment&quot; is set to &quot;center&quot;."
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field name="zhongframework_Jparam_websiteFavicon" type="media"
+                    label="Your favicon:"
+                    hide_default="1"
+                    description="The favicon image is usually 16x16 pixels" />
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field name="zhongframework_Jparam_fontSize"  type="text" default="100"
+                    label="Root font size (in %)"
+                    description="Note: for accessibility reasons the root font-size is set as a relative unit. The default value is 100%, which is usually equal to 16px depending on the client's browser preferences."
+                    filter="float" />
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field name="zhongframework_Jparam_maxLayoutWidth" type="text" default="1080"
+                    label="Site container max-width (in px)"
+                    description="Set a width for the main content column"
+                    filter="integer" />
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field name="zhongframework_Jparam_main_menu_alignment" type="list" default="side"
+                    label="Main menu alignment"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="side">Side</option>
+                    <option value="center">Center</option>
+                </field>
+
+                <field name="zhongframework_Jparam_floating_submenus_effect" type="list" default="fade"
+                    label="Sub-menus effect"
+                    description="Note: these effects are active only on modern browsers."
+                    filter="word"
+                    >
+                    <option value="fade">Fade</option>
+                    <option value="motion">Motion</option>
+                    <option value="flip">Flip</option>
+                    <option value="scale">Scale</option>
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field name="zhongframework_Jparam__headerButtonsStyle" type="list" default="icon-and-text"
+                    label="Header tools style:"
+                    description=""
+                    filter="string"
+                    >
+                    <option value="icon-and-text">Icon and text (higher usability)</option>
+                    <option value="icon-only">Icon only</option>
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field name="zhongframework_Jparam_enable_access_features" type="list" default="true"
+                    label="Enable font-size panel?"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field name="zhongframework_Jparam_enable_customWidth_leftRightColumn" type="list" default="true"
+                    label="Custom width for left/right columns?"
+                    description="Enable a custom width for the left and/or right columns? If set to &quot;Default&quot;, the default width is applied. If set to &quot;Custom&quot;, the chosen width is applied."
+                    filter="word"
+                    >
+                    <option value="true">Template Default</option>
+                    <option value="false">Custom (select width below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_customWidth_leftColumn" type="text" default="20"
+                    label="Left column width (in %)"
+                    description="The Default value is 17% when the right column is displayed; otherwise it is 20%."
+                    filter="integer" />
+
+                <field name="zhongframework_Jparam_customWidth_rightColumn" type="text" default="20"
+                    label="Right column width (in %)"
+                    description="The Default value is 17% when the left column is displayed; otherwise it is 20%."
+                    filter="integer" />
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field name="zhongframework_Jparam_enable_top_button_default_layout" type="list" default="true"
+                    label="Enable &quot;Top&quot; button?"
+                    description="This button is placed just above the footer."
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field name="zhongframework_Jparam_enable____mobileSwitcherBtn" type="list" default="false"
+                    label="Enable &quot;Switch to desktop site&quot; link?"
+                    description="This link appears at the end of the page, note that it is showed only on mobile devices"
+                    filter="string"
+                    >
+                    <option value="false">False</option>
+                    <option value="true">True</option>
+                </field>
+
+            </fieldset>
+
+<!--===================================
+   CUSTOM STYLE & COLORS
+====================================-->
+            <fieldset name="customTemplateColorsStyles" label="Custom Style &amp; Colors">
+
+                <field type="spacer" label="&lt;p class=&quot;zhongframework-admin-panel_highlighted-yellow&quot;&gt;&lt;strong&gt;Tip for accessibility&lt;/strong&gt;: choose colors that provide &lt;strong&gt;sufficient contrast&lt;/strong&gt; between the text and the background. Use the &lt;a href=&quot;http://webaim.org/resources/contrastchecker/&quot; target=&quot;_blank&quot;&gt;Color Contrast Checker&lt;/a&gt; to reach at least level WCAG AA. &lt;/p&gt;" />
+
+				<!-- [CUSTOM COLORS] Layout Options -->
+                <field type="spacer" label="&lt;h2 class=&quot;zhongframework-admin-panel_main-block-heading&quot;&gt;Site Layout&lt;/h2&gt;" />
+
+                <field type="spacer" label="&lt;p&gt;This feature is &lt;strong style=&quot;color:#E00&quot;&gt;not available&lt;/strong&gt; in the free edition.&lt;/p&gt;" />
+
+                <field name="zhongframework_Jparam_global_layout_width_type" type="hidden" default="contained"
+                    label="Header/Footer layout"
+                    description=""
+                    filter="string"
+                    >
+                    <option value="contained">Contained</option>
+                    <option value="stretched">Stretched</option>
+                    <option value="full-width">Full width</option>
+                </field>
+
+                <field name="zhongframework_Jparam_asideTopBottom_layout_width_type" type="hidden" default="contained"
+                    label="Aside top/bottom layout"
+                    description=""
+                    filter="string"
+                    >
+                    <option value="contained">Contained</option>
+                    <option value="stretched">Stretched</option>
+                    <option value="full-width">Full width</option>
+                </field>
+
+                <field name="zhongframework_Jparam_fullWidthHomepage" type="hidden" default="false"
+                    label="Full-width Homepage? (read tooltip)"
+                    description="If enabled, the main content area of the homepage will be full-width with no margin and padding, also, aside-top/bottom and left/right columns are disabled. This option is useful to build a landing page."
+                    >
+                    <option value="false">False</option>
+                    <option value="true">True</option>
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <!-- [CUSTOM COLORS] -->
+                <field type="spacer" label="&lt;h2 class=&quot;zhongframework-admin-panel_main-block-heading&quot;&gt;Global style&lt;/h2&gt;" />
+
+                <!-- Body BG -->
+                <field type="spacer" label="&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Body:&lt;/h3&gt;" />
+
+                <field name="zhongframework_Jparam_enable_customColor_background" type="list" default="default"
+                    label="Body Background Color:"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="default">Template Default</option>
+                    <option value="custom">Custom (select color below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_background"
+                    type="color" default="#000000"
+                    label="custom color"
+                    description="">
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <!-- Body Image -->
+                <field name="zhongframework_Jparam_enable_customColor_body_background_image" type="list" default="default"
+                    label="Body Background Image:"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="default">None</option>
+                    <option value="custom">Custom (select style below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_customStyle_body_background_image_path" type="media"
+                    label="background-image:"
+                    hide_default="1"
+                    description="" />
+
+                <field name="zhongframework_Jparam_customStyle_body_background_image_attachment" type="list" default="scroll"
+                    label="background-attachment:"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="fixed">fixed</option>
+                    <option value="scroll">scroll</option>
+                </field>
+
+                <field name="zhongframework_Jparam_customStyle_body_background_image_positionX" type="list" default="center"
+                    label="background-positionX:"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="center">center</option>
+                    <option value="top">top</option>
+                    <option value="bottom">bottom</option>
+                </field>
+
+                <field name="zhongframework_Jparam_customStyle_body_background_image_positionY" type="list" default="center"
+                    label="background-positionY:"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="center">center</option>
+                    <option value="left">left</option>
+                    <option value="right">right</option>
+                </field>
+
+                <field name="zhongframework_Jparam_customStyle_body_background_image_repeat" type="list" default="no-repeat"
+                    label="background-repeat:"
+                    description=""
+                    filter="string"
+                    >
+                    <option value="no-repeat">no-repeat</option>
+                    <option value="repeat">repeat</option>
+                    <option value="repeat-x">repeat-x</option>
+                    <option value="repeat-y">repeat-y</option>
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <!-- General Text Color -->
+                <field type="spacer" label="&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Text:&lt;/h3&gt;" />
+                <field name="zhongframework_Jparam_enable_customColor_text" type="list" default="default"
+                    label="General Text Color:"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="default">Template Default</option>
+                    <option value="custom">Custom (select color below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_text"
+                    type="color" default="#000000"
+                    label="custom color"
+                    description="">
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <!-- Headings Color -->
+                <field type="spacer" label="&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Headings:&lt;/h3&gt;" />
+                <field name="zhongframework_Jparam_enable_customColor_headings" type="list" default="default"
+                    label="Headings Color:"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="default">Template Default</option>
+                    <option value="custom">Custom (select color below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_headings"
+                    type="color" default="#000000"
+                    label="custom color"
+                    description="">
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <!-- Links Color -->
+                <field type="spacer" label="&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Links:&lt;/h3&gt;" />
+                <field name="zhongframework_Jparam_enable_customColor_links" type="list" default="default"
+                    label="Links Color:"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="default">Template Default</option>
+                    <option value="custom">Custom (select color below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_links"
+                    type="color" default="#000000"
+                    label="custom color"
+                    description="">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_visitedLinks"
+                    type="color" default="#000000"
+                    label="custom color (visited)"
+                    description="">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_hoverLinks"
+                    type="color" default="#000000"
+                    label="custom color (hover)"
+                    description="">
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <!-- Buttons -->
+                <field type="spacer" label="&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Buttons:&lt;/h3&gt;" />
+
+                <field name="zhongframework_Jparam_enable_customColor_buttons" type="list" default="default"
+                    label="Buttons style:"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="default">Template Default</option>
+                    <option value="custom">Custom (select style below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_buttons_BG"
+                    type="color" default="#000000"
+                    label="background"
+                    description="">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_buttons_BG_hover"
+                    type="color" default="#000000"
+                    label="background (hover)"
+                    description="">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_buttons_Text"
+                    type="color" default="#000000"
+                    label="text color"
+                    description="">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_buttons_Text_hover"
+                    type="color" default="#000000"
+                    label="text (hover)"
+                    description="">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_buttons_BorderColor"
+                    type="color" default="#000000"
+                    label="border color"
+                    description="">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_buttons_BorderColor_hover"
+                    type="color" default="#000000"
+                    label="border color (hover)"
+                    description="">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_buttons_BorderStyle"
+                    type="text" default="solid"
+                    label="border style"
+                    description="Select CSS border style, i.e. &quot;solid&quot;, &quot;dotted&quot;, &quot;dashed&quot;">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_buttons_BorderWidth"
+                    type="text" default="0"
+                    label="border width"
+                    description="Example: write &quot;1px&quot; if you want to specify a measure in all four sides of the box (top, left, bottom and right). Instead, write &quot;1px 0px 3px 2px&quot; if you need to specify different measures for the sides (in this case, &quot;1px&quot; for top, &quot;0px&quot; for right, &quot;3px&quot; for bottom and &quot;2px&quot; for the left side)">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_buttons_BorderRadius"
+                    type="text" default="0"
+                    label="border radius"
+                    description="Example: write &quot;5px&quot; if you want to specify a measure for all the four edges of the box (top-left, top-right, bottom-right and bottom-left). Instead, write &quot;4px 3px 2px 1px&quot; if you need to specify different measures for each edge (in this case, &quot;4px&quot; for top-left, &quot;3px&quot; for top-right, &quot;2px&quot; for bottom-right and &quot;1px&quot; for bottom-left)&lt;br /&gt;ATTENTION: this option doesn't work on old browsers (i.e. Internet Explorer 8/7/6)">
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <!-- Tables -->
+                <field type="spacer" label="&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Tables:&lt;/h3&gt;" />
+
+                <field name="zhongframework_Jparam_enable_customColor_tables" type="list" default="default"
+                    label="Tables style:"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="default">Template Default</option>
+                    <option value="custom">Custom (select style below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_tables_BG"
+                    type="color" default="#000000"
+                    label="background"
+                    description="">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_tables_Text"
+                    type="color" default="#000000"
+                    label="text color"
+                    description="">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_tables_BorderColor"
+                    type="color" default="#000000"
+                    label="border color"
+                    description="">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_tables_BorderStyle"
+                    type="text" default="solid"
+                    label="border style"
+                    description="Select CSS border style, i.e. &quot;solid&quot;, &quot;dotted&quot;, &quot;dashed&quot;">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_tables_BorderWidth"
+                    type="text" default="1px"
+                    label="border width"
+                    description="Example: write &quot;1px&quot; if you want to specify a measure in all four sides of the box (top, left, bottom and right). Instead, write &quot;1px 0px 3px 2px&quot; if you need to specify different measures for the sides (in this case, &quot;1px&quot; for top, &quot;0px&quot; for right, &quot;3px&quot; for bottom and &quot;2px&quot; for the left side)">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_tables_header_BG"
+                    type="color" default="#000000"
+                    label="Table header cells background"
+                    description="">
+                </field>
+
+                <field name="zhongframework_Jparam_customColor_tables_header_Text"
+                    type="color" default="#000000"
+                    label="Table header cells text color"
+                    description="">
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field type="spacer" label="&lt;p&gt;The &lt;strong&gt;Advanced Layout Customization&lt;/strong&gt; is &lt;strong style=&quot;color:#E00&quot;&gt;not available&lt;/strong&gt; in the free edition.&lt;/p&gt;&lt;p&gt;Many other customization options are available &lt;strong&gt;in the &lt;span style=&quot;color:#2E7D00&quot;&gt;Premium&lt;/span&gt; edition&lt;/strong&gt;.&lt;/p&gt;" />
+
+
+            </fieldset>
+
+<!--===================================
+   GROUPED MODULES STYLE
+====================================-->
+            <fieldset name="userModulesStyle" label="Custom Modules Style">
+
+                <!-- Grouped modules style -->
+                <field type="spacer" label="&lt;br /&gt;&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Custom Modules Style:&lt;/h3&gt;" />
+
+                <field type="spacer" label="&lt;strong&gt;Styles available:&lt;/strong&gt;&lt;br /&gt;- &lt;strong&gt;Default&lt;/strong&gt;: default style is set, some margins and paddings applied.&lt;br /&gt;- &lt;strong&gt;Plain&lt;/strong&gt;: no style set, some margins and paddings applied.&lt;br /&gt;- &lt;strong&gt;None&lt;/strong&gt;: no style set, no margins nor padding.&lt;br /&gt;- &lt;strong&gt;Light&lt;/strong&gt;: a light style set, some margins and paddings applied.&lt;br /&gt;- &lt;strong&gt;Dark&lt;/strong&gt;: a dark style set, some margins and paddings applied.&lt;br /&gt;- &lt;strong&gt;Menu container&lt;/strong&gt;: set this style if the module contains a menu&lt;br /&gt;- &lt;strong&gt;{color}&lt;/strong&gt;: colored module, some margins and paddings applied.&lt;br /&gt;- &lt;strong&gt;User custom {n}&lt;/strong&gt;: Define your custom style below" />
+
+                <field name="zhongframework_Jparam_userModuleStyle_1" type="list" default="full-width"
+                    label="Style for &quot;aside-top-A&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_2" type="list" default="full-width"
+                    label="Style for &quot;aside-top-B1&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_3" type="list" default="full-width"
+                    label="Style for &quot;aside-top-B2&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_4" type="list" default="full-width"
+                    label="Style for &quot;aside-top-C1&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_5" type="list" default="full-width"
+                    label="Style for &quot;aside-top-C2&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_6" type="list" default="full-width"
+                    label="Style for &quot;aside-top-C3&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_7" type="list" default="full-width"
+                    label="Style for &quot;aside-top-D1&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_8" type="list" default="full-width"
+                    label="Style for &quot;aside-top-D2&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_9" type="list" default="full-width"
+                    label="Style for &quot;aside-top-D3&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_10" type="list" default="full-width"
+                    label="Style for &quot;aside-top-D4&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_11" type="list" default="full-width"
+                    label="Style for &quot;main-top-A&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_12" type="list" default="full-width"
+                    label="Style for &quot;main-top-B1&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_13" type="list" default="full-width"
+                    label="Style for &quot;main-top-B2&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_14" type="list" default="full-width"
+                    label="Style for &quot;main-top-C1&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_15" type="list" default="full-width"
+                    label="Style for &quot;main-top-C2&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_16" type="list" default="full-width"
+                    label="Style for &quot;main-top-C3&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_17" type="list" default="full-width"
+                    label="Style for &quot;main-top-D1&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_18" type="list" default="full-width"
+                    label="Style for &quot;main-top-D2&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_19" type="list" default="full-width"
+                    label="Style for &quot;main-top-D3&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_20" type="list" default="full-width"
+                    label="Style for &quot;main-top-D4&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_21" type="list" default="full-width"
+                    label="Style for &quot;aside-bottom-A&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_22" type="list" default="full-width"
+                    label="Style for &quot;aside-bottom-B1&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_23" type="list" default="full-width"
+                    label="Style for &quot;aside-bottom-B2&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_24" type="list" default="full-width"
+                    label="Style for &quot;aside-bottom-C1&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_25" type="list" default="full-width"
+                    label="Style for &quot;aside-bottom-C2&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_26" type="list" default="full-width"
+                    label="Style for &quot;aside-bottom-C3&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_27" type="list" default="full-width"
+                    label="Style for &quot;aside-bottom-D1&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_28" type="list" default="full-width"
+                    label="Style for &quot;aside-bottom-D2&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_29" type="list" default="full-width"
+                    label="Style for &quot;aside-bottom-D3&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_30" type="list" default="full-width"
+                    label="Style for &quot;aside-bottom-D4&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_31" type="list" default="full-width"
+                    label="Style for &quot;footer-top-A&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_32" type="list" default="full-width"
+                    label="Style for &quot;footer-top-B1&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_33" type="list" default="full-width"
+                    label="Style for &quot;footer-top-B2&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_34" type="list" default="full-width"
+                    label="Style for &quot;footer-top-C1&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_35" type="list" default="full-width"
+                    label="Style for &quot;footer-top-C2&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_36" type="list" default="full-width"
+                    label="Style for &quot;footer-top-C3&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_37" type="list" default="full-width"
+                    label="Style for &quot;footer-top-D1&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_38" type="list" default="full-width"
+                    label="Style for &quot;footer-top-D2&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_39" type="list" default="full-width"
+                    label="Style for &quot;footer-top-D3&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleStyle_40" type="list" default="full-width"
+                    label="Style for &quot;footer-top-D4&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <!-- Important modules style -->
+                <field type="spacer" label="&lt;br /&gt;"/>
+                <field name="zhongframework_Jparam_moduleStyle_mainMenu" type="list" default="marked-default"
+                    label="Style for &quot;side-menu&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">Full width</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_moduleStyle_left" type="list" default="full-width"
+                    label="Style for &quot;aside-left&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Default + Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+                <field name="zhongframework_Jparam_moduleStyle_right" type="list" default="full-width"
+                    label="Style for &quot;aside-right&quot;"
+                    description=""
+                    >
+                    <option value="marked-default">Default</option>
+                    <option value="plain">Plain</option>
+                    <option value="full-width">None (default)</option>
+                    <option value="marked-light">Light</option>
+                    <option value="marked-dark">Dark</option>
+                    <option value="marked-default zf--menu-container">Default + Menu container</option>
+                    <option value="colored-grey">Grey</option>
+                    <option value="colored-green">Green</option>
+                    <option value="colored-red">Red</option>
+                    <option value="colored-brown">Brown</option>
+                    <option value="colored-yellow">Yellow</option>
+                    <option value="colored-blue">Blue</option>
+                    <option value="colored-black">Black</option>
+                    <option value="user-custom-1">User custom 1 (see below)</option>
+                    <option value="user-custom-2">User custom 2 (see below)</option>
+                    <option value="user-custom-3">User custom 3 (see below)</option>
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <!-- CUSTOM USER MODULE (alert) -->
+                <field type="spacer" label="&lt;p&gt;The &lt;em&gt;Custom User Module Style&lt;/em&gt; is &lt;strong style=&quot;color:#E00&quot;&gt;not available&lt;/strong&gt; in the free edition.&lt;/p&gt;&lt;p&gt;&lt;strong&gt;In the &lt;span style=&quot;color:#2E7D00&quot;&gt;Premium&lt;/span&gt; edition&lt;/strong&gt; you can specify three module styles with &lt;strong&gt;your own custom colors&lt;/strong&gt;. You can choose: &lt;em&gt;Module background, module border style and color, module text color, module links color, module margin and padding&lt;/em&gt;.&lt;/p&gt;" />
+
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <!-- Grouped modules style -->
+                <field type="spacer" label="&lt;br /&gt;&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Custom Modules Width:&lt;/h3&gt;" />
+
+                <field name="zhongframework_Jparam_userModuleWidth_1" type="list" default="100"
+                    label="Width for &quot;aside-top-A&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_2" type="list" default="50"
+                    label="Width for &quot;aside-top-B1&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_3" type="list" default="50"
+                    label="Width for &quot;aside-top-B2&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_4" type="list" default="33"
+                    label="Width for &quot;aside-top-C1&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_5" type="list" default="33"
+                    label="Width for &quot;aside-top-C2&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_6" type="list" default="33"
+                    label="Width for &quot;aside-top-C3&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_7" type="list" default="25"
+                    label="Width for &quot;aside-top-D1&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_8" type="list" default="25"
+                    label="Width for &quot;aside-top-D2&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_9" type="list" default="25"
+                    label="Width for &quot;aside-top-D3&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_10" type="list" default="25"
+                    label="Width for &quot;aside-top-D4&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_11" type="list" default="100"
+                    label="Width for &quot;main-top-A&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_12" type="list" default="50"
+                    label="Width for &quot;main-top-B1&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_13" type="list" default="50"
+                    label="Width for &quot;main-top-B2&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_14" type="list" default="33"
+                    label="Width for &quot;main-top-C1&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_15" type="list" default="33"
+                    label="Width for &quot;main-top-C2&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_16" type="list" default="33"
+                    label="Width for &quot;main-top-C3&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_17" type="list" default="25"
+                    label="Width for &quot;main-top-D1&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_18" type="list" default="25"
+                    label="Width for &quot;main-top-D2&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_19" type="list" default="25"
+                    label="Width for &quot;main-top-D3&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_20" type="list" default="25"
+                    label="Width for &quot;main-top-D4&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_21" type="list" default="100"
+                    label="Width for &quot;aside-bottom-A&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_22" type="list" default="50"
+                    label="Width for &quot;aside-bottom-B1&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_23" type="list" default="50"
+                    label="Width for &quot;aside-bottom-B2&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_24" type="list" default="33"
+                    label="Width for &quot;aside-bottom-C1&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_25" type="list" default="33"
+                    label="Width for &quot;aside-bottom-C2&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_26" type="list" default="33"
+                    label="Width for &quot;aside-bottom-C3&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_27" type="list" default="25"
+                    label="Width for &quot;aside-bottom-D1&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_28" type="list" default="25"
+                    label="Width for &quot;aside-bottom-D2&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_29" type="list" default="25"
+                    label="Width for &quot;aside-bottom-D3&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_30" type="list" default="25"
+                    label="Width for &quot;aside-bottom-D4&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_31" type="list" default="100"
+                    label="Width for &quot;footer-top-A&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_32" type="list" default="50"
+                    label="Width for &quot;footer-top-B1&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_33" type="list" default="50"
+                    label="Width for &quot;footer-top-B2&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_34" type="list" default="33"
+                    label="Width for &quot;footer-top-C1&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_35" type="list" default="33"
+                    label="Width for &quot;footer-top-C2&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_36" type="list" default="33"
+                    label="Width for &quot;footer-top-C3&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_37" type="list" default="25"
+                    label="Width for &quot;footer-top-D1&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_38" type="list" default="25"
+                    label="Width for &quot;footer-top-D2&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_39" type="list" default="25"
+                    label="Width for &quot;footer-top-D3&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+                <field name="zhongframework_Jparam_userModuleWidth_40" type="list" default="25"
+                    label="Width for &quot;footer-top-D4&quot;"
+                    description=""
+                    >
+                    <option value="100">100%</option>
+                    <option value="80">80%</option>
+                    <option value="75">75%</option>
+                    <option value="66">66.66%</option>
+                    <option value="60">60%</option>
+                    <option value="50">50%</option>
+                    <option value="40">40%</option>
+                    <option value="33">33.33%</option>
+                    <option value="25">25%</option>
+                    <option value="20">20%</option>
+                </field>
+
+            </fieldset>
+
+<!--===================================
+   FONTS
+====================================-->
+            <fieldset name="fontsOptions" label="Custom Fonts">
+                <!-- [ADVANCED COLOR ALERT] -->
+                <field type="spacer" label="&lt;p&gt;The &lt;strong&gt;Custom Font&lt;/strong&gt; feature is &lt;strong style=&quot;color:#E00&quot;&gt;not available&lt;/strong&gt; in the free edition.&lt;/p&gt;&lt;p&gt;The following options are &lt;strong&gt;available in the &lt;span style=&quot;color:#2E7D00&quot;&gt;Premium&lt;/span&gt; edition&lt;/strong&gt;:&lt;/p&gt;&lt;p&gt;- &lt;strong&gt;Google Font Import&lt;/strong&gt;&lt;br /&gt;- &lt;strong&gt;Custom Font Setup&lt;/strong&gt; (General template font, headings font, site title font, site subtitle font, main menu font)&lt;/p&gt;" />
+
+
+            </fieldset>
+
+<!--===================================
+   OTHER OPTIONS
+====================================-->
+            <fieldset name="otherOptions" label="More Options">
+
+                <field type="spacer" label="&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Google Analytics:&lt;/h3&gt;" />
+
+                <field name="zhongframework_Jparam_enable_googleAnalytics" type="list" default="false"
+                    label="Enable Google Analytics?"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+                <field name="zhongframework_Jparam_googleAnalytics_ID" type="text" default="XXXXXXXX-Y"
+                    label="Google Analytics Tracking ID (read tooltip)"
+                    description="Please note: do not write &quot;UA-&quot;. For example, a correct value would be &quot;12345-6&quot;"
+                    filter="string" />
+
+                <field name="zhongframework_Jparam_googleAnalytics_anonymizationEnabled" type="list" default="true"
+                    label="Enable Google Analytics Anonymization? (read tooltip)"
+                    description="This feature offers more privacy to your visitors (deletion of the last octet of the IP-address prior to storage). It is designed to help site owners comply with their own privacy policies or, in some countries, recommendations from local data protection authorities."
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field type="spacer" label="&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Alerts Panel:&lt;/h3&gt;" />
+
+                <field type="spacer" label="&lt;p&gt;(To show the panel, load a module into position &quot;alerts-panel&quot;)&lt;/p&gt;" />
+
+                <field name="zhongframework_Jparam_alertsPanel_cookieAware" type="list" default="true"
+                    label="Hide forever after closing?"
+                    description="If true, the panel will be hidden forever once closed. If false, the panel will be showed any time a module is loaded."
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+                <field name="zhongframework_Jparam_alertsPanel_providedControl" type="list" default="ok-button"
+                    label="Provided control:"
+                    description=""
+                    filter="string"
+                    >
+                    <option value="ok-button">OK button</option>
+                    <option value="close-button">Close button</option>
+                </field>
+
+                <field name="zhongframework_Jparam_alertsPanel_position" type="list" default="bottom"
+                    label="Position?"
+                    description=""
+                    filter="string"
+                    >
+                    <option value="top">Top</option>
+                    <option value="bottom">Bottom</option>
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field type="spacer" label="&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Social icons:&lt;/h3&gt;" />
+
+
+                <field type="spacer" label="&lt;p&gt;The &lt;em&gt;social options&lt;/em&gt; are &lt;strong style=&quot;color:#E00&quot;&gt;not available&lt;/strong&gt; in the free edition.&lt;/p&gt;" />
+
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field type="spacer" label="&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Print options:&lt;/h3&gt;" />
+
+                <field name="zhongframework_Jparam__print_font_type" type="list" default="serif"
+                    label="Font for printing?"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="serif">Serif</option>
+                    <option value="sansserif">Sans serif</option>
+                </field>
+
+                <field name="zhongframework_Jparam_print_font_size" type="list" default="normal"
+                    label="Font size for printing?"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="big">Large</option>
+                    <option value="normal">Medium</option>
+                    <option value="small">Small</option>
+                </field>
+
+                <field name="zhongframework_Jparam__print_show_header" type="list" default="false"
+                    label="When printing, show site banner? (logo, title and subtitle)"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+                <field name="zhongframework_Jparam__print_show_footer" type="list" default="false"
+                    label="When printing, show footer?"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+                <field name="zhongframework_Jparam_print_images" type="list" default="false"
+                    label="When printing, hide all images?"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+            </fieldset>
+
+<!--===================================
+   ADVANCED OPTIONS
+====================================-->
+            <fieldset name="advancedOptions" label="Advanced Options">
+
+<!-- hr --><field type="spacer" label="&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Developer Options&lt;/h3&gt;" />
+
+                <field name="zhongframework_Jparam_custom_user_inlineCSS" type="textarea" default=""
+                    label="Your Custom CSS"
+                    filter="raw"
+                    description="Use this textarea to add your custom CSS and override the native template style (we &lt;strong&gt;discourage&lt;/strong&gt; modifications to the template's CSS files).&lt;br/&gt;Alternatively to this textarea, you can include your own CSS in &lt;em&gt;overrides.css&lt;/em&gt; (see option below)" />
+
+                <field name="zhongframework_Jparam_custom_code_head_bottom" type="textarea" default=""
+                    label="Custom code before &lt;&lt;span&gt;&lt;/span&gt;/head&gt;"
+                    filter="raw"
+                    description="" />
+
+                <field name="zhongframework_Jparam_custom_code_body_bottom" type="textarea" default=""
+                    label="Custom code before &lt;&lt;span&gt;&lt;/span&gt;/body&gt;"
+                    filter="raw"
+                    description="" />
+
+                <field name="zhongframework_Jparam_enable_user_overrides_css" type="list" default="false"
+                    label="Enable &quot;overrides.css&quot;?"
+                    description="Use this file to include style overrides. It is located at TEMPLATE_DIRECTORY/zf/custom/overrides/assets/css/overrides.css"
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+                <field name="zhongframework_Jparam_enable_user_overrides_js" type="list" default="false"
+                    label="Enable &quot;overrides.js&quot;?"
+                    description="Use this file to override the native template functions. This file is located at TEMPLATE_DIRECTORY/zf/custom/overrides/assets/js/overrides.js"
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+                <field name="zhongframework_Jparam_enable_php_debugger" type="list" default="false"
+                    label="Enable PHP debugger?"
+                    description="Attention: enable during developing only, keep this option disabled in production"
+                    filter="word"
+                    >
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field type="spacer" label="&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Advanced Readability Controls&lt;/h3&gt;" />
+
+                <field type="spacer" label="&lt;p&gt;The following controls may be useful if your website has special accessibility requirements or if it contains long articles/posts.&lt;/p&gt;" />
+
+                <field name="zhongframework_Jparam_enable___legibility_switcher" type="list" default="false"
+                    label="Enable font family switcher?"
+                    description=""
+                    filter="word"
+                    >
+                    <option value="false">False</option>
+                    <option value="true">True</option>
+                </field>
+
+                <field name="zhongframework_Jparam_enable___theme_switcher" type="list" default="false"
+                    label="Enable theme switcher? (read tooltip)"
+                    description="Note: the inverted theme is not supported by some old browsers. It is also disabled in mobile layout because some low-end devices may suffer from performance issues."
+                    filter="word"
+                    >
+                    <option value="false">False</option>
+                    <option value="true">True</option>
+                </field>
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+                <field type="spacer" label="&lt;h3 class=&quot;zhongframework-admin-panel_secondary-block-heading&quot;&gt;Advanced Accessibility Options:&lt;/h3&gt;" />
+
+                <field name="zhongframework_Jparam_enableHiddenHeadingsDefaultLayout" type="list" default="true"
+                    label="Enable &quot;section headings&quot; and HTML5 semantic tags?"
+                    description="This template uses hidden headings (readable only by screenreaders) and semantic tags to define the document outline."
+                    >
+                    <option value="true">True (default)</option>
+                    <option value="false">False</option>
+                </field>
+
+                <field name="zhongframework_Jparam_enable_quickAccessMenu_defaultLayout" type="list" default="true"
+                    label="Enable &quot;Skip links&quot;?"
+                    description="To see this menu, use keyboard only navigation (TAB key)"
+                    filter="string"
+                    >
+                    <option value="true">True (default)</option>
+                    <option value="false">False</option>
+                </field>
+
+                <field name="zhongframework_Jparam_altLogo" type="text" default=""
+                    label="Site logo &quot;alt&quot; attribute: (read tooltip)"
+                    description="If this field is left empty, the alt attribute of the logo will be the site title as set in Joomla's global configuration."
+                    filter="string"
+                    />
+
+<!-- hr --><field type="spacer" label="&lt;hr class=&quot;zhongframework-admin-panel_custom-element-style&quot;/&gt;" />
+
+<!--DO-NOT-REMOVE--><field name="zfuseraccess" type="zfuseraccess" /><!--DO-NOT-REMOVE-->
+
+            </fieldset>
+
+        </fields>
+    </config>
+</extension>
