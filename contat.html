@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <!-- Basico - abre a pagina no formato de navegadores desktop -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Mobile Metas - verifica se a pagina for aberta em um dispositivo movel -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1C1C1C">
+    <!-- Site Metas -->
+    <title>Matheus V Lobo</title>
+    <link rel="icon" type="imagem/png" href="/imagens/favicon.ico" />
+    <link href="css/estilo.css" rel="stylesheet" type="text/css">
+    <!--Pega o arquivo estilo.css da pasta CSS-->
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- menu inicio do CONTEUDO -->
+        <div class="header">
+            <div id="menu">
+                <a href="http://www.proflobo.com.br/"><img class="logo" src="imagens/favicon.png" width="100" height="100" /></a>
+                <h1 id="textLogo" class="TextLogo">Bliblioteca Online</h1>
+                <ul class="navbar">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="biblioteca.php">Biblioca</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- menu FIM -->
+        <div class="content">
+            <h1>Contato</h1>
+
+            <h2>Na página de contato com alerta de envio de email. </h2>
+            <!-- chama o javascript de aviso -->
+            <script type="text/javascript" src="js/personalizado.js"></script>
+            <!-- formulario de envio de email -->
+
+            <div class="contato">
+                <form class="form" method="POST" action="php/enviar.php" name="formcontato">
+                    <input class="field" name="email" placeholder="E-mail">
+                    <input class="field" name="name" placeholder="Nome">
+                    <textarea class="field" name="message" placeholder="Digite seu comenterio."></textarea>
+                    <input class="field" type="submit" name="ENVIAR" onclick="return validar_formcontato()">
+                </form>
+            </div>
+
+            <!-- Fim do COnteudo -->
+
+            <div class="footer">
+                <p>Todos os direitos reservado á Matheus Lobo | <a href="http://www.proflobo.com.br">www.proflobo.com.br</a></p>
+                <!-- FIM .footer -->
+            </div>
+            <!-- FIM .container -->
+        </div>
+</body>
+
+</html>
