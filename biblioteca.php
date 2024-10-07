@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="theme-color" content="#1C1C1C">
     <!-- Site Metas -->
-    <title>Biblioteca Online - ALEXANDRINA</title>
+    <title>Biblioteca Online</title>
     <link rel="icon" type="imagem/ico" href="/imagens/favicon.ico" />
     <link href="css/estilo.css" rel="stylesheet" type="text/css">
 </head>
